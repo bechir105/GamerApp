@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="275dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+
+                <TextView
+                    android:id="@+id/eventTitle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="144dp"
+                    android:gravity="center"
+                    android:text="@string/event1"
+                    android:textAppearance="?attr/textAppearanceTitleMedium"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.541"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/eventImage1"
+                    android:layout_width="300dp"
+                    android:layout_height="140dp"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/ic_idia" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="350dp"
+                    android:layout_height="75dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="The biggest video game news, rumors, previews, and info about the PC, PlayStation, Xbox, Nintendo, and mobile titles you play."
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/eventImage1"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <androidx.constraintlayout.widget.Barrier
+                    android:id="@+id/barrier2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:barrierDirection="left"
+                    app:constraint_referenced_ids="textView12" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="275dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+            <TextView
+                android:id="@+id/eventTitle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="144dp"
+                android:gravity="center"
+                android:text="The legend of zelda"
+                android:textAppearance="?attr/textAppearanceTitleMedium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.541"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/eventImage2"
+                android:layout_width="300dp"
+                android:layout_height="140dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/ic_zelda" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="335dp"
+                android:layout_height="81dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="80dp"
+                android:text="An epic adventure awaits in the Legend of Zelda: Tears of the Kingdom game, only on the Nintendo Switch system"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.292"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/eventImage2"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

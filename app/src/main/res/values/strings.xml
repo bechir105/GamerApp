@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">gamer</string>
+    <string name="home">Home</string>
+    <string name="news">News</string>
+    <string name="store">Store</string>
+    <string name="profile">Profile</string>
+
+    <string name="event1">top 10 gaming news of the day  </string>
+
+</resources>
